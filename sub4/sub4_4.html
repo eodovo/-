@@ -1,0 +1,73 @@
+<?
+           session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR센터-FAQ</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content4.css">
+    <script src="https://kit.fontawesome.com/6c4383a4e3.js" crossorigin="anonymous"></script>
+    <!-- <script src="../common/js/prefixfree.min.js"></script> -->
+</head>
+
+<body>
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+        <img src="../sub4/common/imgaes/main.jpg" alt="메인이미지">
+        <h3>PR센터</h3>
+    </div>
+
+    <div class="subNav">
+        <ul>
+            <li><a href="../pr/list.php">PR자료실</a></li>
+            <li><a href="../greet/list.php">회사소식</a></li>
+            <li><a href="./sub4_3.html">FAQ</a></li>
+            <li class="current"><a href="./sub4_4.html">문의하기</a></li>
+
+        </ul>
+    </div>
+
+    <article id="content">
+        <div class="titleArea">
+            <div class="lineMap">
+                <span><i class="fa-solid fa-house"></i></span>&gt; <span>PR센터</span>&gt;
+                <strong>문의하기</strong>
+            </div>
+            <h2>문의하기</h2>
+        </div>
+        <div class="contentArea">
+            <!-- 메인컨텐츠들 여기다가 입력 -->
+            <div class="section1">
+                <div>
+                    <p>문의사항을 남겨주시면 답변드리겠습니다.</p>
+                </div>
+                <div id="mailAddress">
+                    <form action="./mail.php" method="post">
+                        <ul>
+                            <li><input type="text" id="uname" name="uname" placeholder="Full name"></li>
+                            <li><input type="text" id="email" name="email" placeholder="E-mail address"></li>
+                            <li><input type="text" id="phone" name="phone" placeholder="Phone number"></li>
+                            <li><textarea name="message" placeholder="Message" cols="50" rows="15"></textarea></li>
+                            <li><input type="submit" value="Send E-mail" class="submitBtn"></li>
+                        </ul>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/faq.js"></script>
+</body>
+
+</html>

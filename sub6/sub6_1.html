@@ -1,0 +1,209 @@
+<?
+           session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투자정보-신용등급</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content1.css">
+    <script src="https://kit.fontawesome.com/6c4383a4e3.js" crossorigin="anonymous"></script>
+    <!-- <script src="../common/js/prefixfree.min.js"></script> -->
+</head>
+
+<body>
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+        <img src="../sub6/common/imgaes/main.jpg" alt="메인이미지">
+        <h3>투자정보</h3>
+    </div>
+
+    <div class="subNav">
+        <ul>
+            <li class="current"><a href="./sub6_1.html">신용등급</a></li>
+            <li><a href="./sub6_2.html">주식현황</a></li>
+            <li><a href="./sub6_3.html">이익배당</a></li>
+        </ul>
+    </div>
+
+    <article id="content">
+        <div class="titleArea">
+            <div class="lineMap">
+                <span><i class="fa-solid fa-house"></i></span>&gt; <span>투자정보</span>&gt;
+                <strong>신용등급</strong>
+            </div>
+            <h2>신용등급</h2>
+        </div>
+        <div class="contentArea">
+            <!-- 메인컨텐츠들 여기다가 입력 -->
+            <div class="section1">
+                <h3>신용등급 추이</h3>
+                <table>
+                    <caption class="hidden">신용등급 추이</caption>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>평가기관</th>
+                            <th>신용등급</th>
+                            <th>최종평가일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="15">회사채</td>
+                            <td>한국신용평가 (AAA~D)</td>
+                            <td>AA- </td>
+                            <td>2019.4.15</td>
+                        </tr>
+                        <tr>
+                            <td>NICE신용평가 (AAA~D)</td>
+                            <td>AA- </td>
+                            <td>2019.4.11</td>
+                        </tr>
+                        <tr>
+                            <td>한국신용평가 (AAA~D)</td>
+                            <td>AA- </td>
+                            <td>2018.11.27</td>
+                        </tr>
+                        <tr>
+                            <td>한국신용평가 (AAA~D)</td>
+                            <td>A+</td>
+                            <td>2018.5.14</td>
+                        </tr>
+                        <tr>
+                            <td>NICE신용평가 (AAA~D)</td>
+                            <td>A+</td>
+                            <td>2018.5.10</td>
+                        </tr>
+                        <tr>
+                            <td>한국신용평가 (AAA~D)</td>
+                            <td>A+</td>
+                            <td>2017.5.25</td>
+                        </tr>
+                        <tr>
+                            <td>NICE신용평가 (AAA~D)</td>
+                            <td>A+</td>
+                            <td>2017.5.25</td>
+                        </tr>
+                        <tr>
+                            <td>한국신용평가 (AAA~D)</td>
+                            <td>A+</td>
+                            <td>2016.6.30</td>
+                        </tr>
+                        <tr>
+                            <td>NICE신용평가 (AAA~D)</td>
+                            <td>A+</td>
+                            <td>2016.6.03</td>
+                        </tr>
+                        <tr>
+                            <td>한국신용평가 (AAA~D)</td>
+                            <td>A+</td>
+                            <td>2015.4.27</td>
+                        </tr>
+                        <tr>
+                            <td>NICE신용평가 (AAA~D)</td>
+                            <td>A+</td>
+                            <td>2015.4.24</td>
+                        </tr>
+                        <tr>
+                            <td>한국신용평가 (AAA~D)</td>
+                            <td>AA-</td>
+                            <td>2014.6.30</td>
+                        </tr>
+                        <tr>
+                            <td>NICE신용평가 (AAA~D)</td>
+                            <td>AA-</td>
+                            <td>2014.6.27</td>
+                        </tr>
+                        <tr>
+                            <td>한국신용평가 (AAA~D)</td>
+                            <td>AA-</td>
+                            <td>2013.6.26</td>
+                        </tr>
+                        <tr>
+                            <td>NICE신용평가 (AAA~D)</td>
+                            <td>AA-</td>
+                            <td>2013.3.15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="section2">
+                <h3>신용등급</h3>
+                <table>
+                    <caption class="hidden">신용등급</caption>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>신용등급</th>
+                            <th>신용등급평가</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="10">회사채</td>
+                            <td id="grade">AAA</td>
+                            <td id="center">원리금 지급능력이 최상급임.</td>
+                        </tr>
+                        <tr>
+                            <td>AA</td>
+                            <td>원리금 지급능력이 매우 우수하지만 AAA의 채권보다는 다소 열위임.</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>원리금 지급능력은 우수하지만 상위등급보다 경제여건 및 환경악화에 따른 영향을 받기 쉬운 면이 있음.</td>
+                        </tr>
+                        <tr>
+                            <td>BBB</td>
+                            <td>원리금 지급능력은 양호하지만 상위등급에 비해서 경제여건 및 환경악화에 따라 장래 원리금의 지급능력이 저하될 가능성을 내포하고 있음.</td>
+                        </tr>
+                        <tr>
+                            <td>BB</td>
+                            <td>원리금 지급능력이 당장은 문제가 되지 않으나 장래 안전에 대해서는 단언할 수 없는 투기적인 요소를 내포하고 있음.</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>원리금 지급능력이 결핍되어 투기적이며 불황시에 이자지급이 확실하지 않음.</td>
+                        </tr>
+                        <tr>
+                            <td>CCC </td>
+                            <td>원리금 지급에 관하여 현재에도 불안요소가 있으며 채무불이행의 위험이 커 매우 투기적임.</td>
+                        </tr>
+                        <tr>
+                            <td>CC</td>
+                            <td>상위등급에 비하여 불안 요소가 더욱 큼.</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>채무불이행의 위험성이 높고 원리금 상환능력이 없음.</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>상환 불능상태임.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>상기 등급 중 AA부터 B등급까지는 +,- 부호를 부가하여 동일등급내에서의 우열을 나타내고 있음.</p>
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+</body>
+
+</html>

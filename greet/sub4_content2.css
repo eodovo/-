@@ -1,0 +1,194 @@
+#content .titleArea {
+  margin-bottom: 10%;
+}
+h2 + p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2em;
+}
+#list_search ul li {
+  float: left;
+}
+#list_search ul li:nth-child(1) {
+  margin-right: 40%;
+  padding-top: 10px;
+}
+#list_search {
+  font-size: 1.25rem;
+  height: 50px;
+}
+#list_search1 span {
+  color: #da291c;
+  font-weight: bold;
+}
+#list_search1 i {
+  margin-right: 5px;
+}
+#list_search2,
+#list_search3,
+#list_search4 {
+  display: inline;
+  float: right;
+}
+
+#list_search2 select {
+  height: 50px;
+  width: 100px;
+  font-size: 1.25rem;
+}
+#list_search3 {
+  height: 50px;
+}
+#list_search3 input {
+  height: 44px;
+  font-size: 1.25rem;
+}
+
+#list_search4 input {
+  height: 50px;
+  width: 80px;
+  font-size: 1.25rem;
+  background-color: #003661;
+  color: #fff;
+  border: none;
+}
+.list_count {
+  float: right;
+  font-size: 1.25rem;
+  margin-top: 10px;
+  margin-right: 3px;
+}
+.list_count select {
+  font-size: 1.25rem;
+}
+#list_top_title {
+  margin-top: 6%;
+}
+#list_title1 {
+  margin: 0 5%;
+}
+#list_title2 {
+  margin: 0 20%;
+}
+#list_title3 {
+  margin-left: 10%;
+}
+#list_title4 {
+  margin-left: 2%;
+}
+#list_title5 {
+  float: right;
+}
+#list_top_title ul {
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #da291c;
+  height: 50px;
+  background-color: #f8f8f8;
+}
+#list_top_title li {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  width: 7%;
+}
+#list_content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.list_item {
+  font-size: 1.25rem;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  line-height: 2.5em;
+  transition: all 0.6s;
+}
+.list_item:hover {
+  background-color: #f3f3f3;
+}
+
+.list_item1 {
+  float: left;
+  margin: 0 5%;
+  width: 2%;
+}
+.list_item2 {
+  width: 53%;
+  text-align: left;
+  font-weight: bold;
+}
+.list_item2:hover a {
+  color: #005793;
+}
+.list_item4 {
+  margin-left: 3%;
+}
+
+.list_item div {
+  display: inline;
+  float: left;
+}
+.list_item3 {
+  width: 5%;
+  margin-left: 9%;
+}
+.list_item5 {
+  float: right;
+  width: 6%;
+}
+#page_button {
+  font-size: 1.25rem;
+}
+#page_num {
+  width: 1200px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#page_num a {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border: 1px solid #999;
+}
+#page_button b {
+  background-color: #da291d;
+  color: #fff;
+  text-align: center;
+  margin: 0 10px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 0.7px;
+}
+#button {
+  float: right;
+  margin-top: 20px;
+}
+#button a {
+  width: 55px;
+  height: 40px;
+  border: 1px solid;
+  display: inline;
+  text-align: center;
+  line-height: 2.3em;
+  padding: 10px 15px;
+  box-shadow: 0px 1px 9px 2px rgb(0 0 0 / 13%);
+  border-radius: 5px;
+  color: #666;
+  border: 2px solid #ddd;
+  transition: all 0.5s;
+}
+#button a:nth-of-type(2) {
+  width: 100%;
+  margin-left: 15px;
+}
+#button a:hover {
+  background-color: #da291c;
+  color: #fff;
+}

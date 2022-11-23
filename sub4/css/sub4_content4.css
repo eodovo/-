@@ -1,0 +1,52 @@
+#content {
+  position: relative;
+}
+
+#content h2 span {
+  color: #da291c;
+}
+
+#content .titleArea h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -60%;
+  width: 1px;
+  height: 60px;
+  background-color: #da291c;
+}
+
+.contentArea .section1 {
+  margin-top: 110px;
+}
+
+.contentArea .section1 div p {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 110px;
+}
+#mailAddress {
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 5% 100px 5%;
+  padding: 20px 5%;
+}
+
+#mailAddress li {
+  margin-bottom: 15px;
+}
+
+#mailAddress input,
+textarea {
+  width: 90%;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px 5%;
+  background: #f0f0f0;
+}
+
+#mailAddress ul li:last-child input {
+  width: 100%;
+}

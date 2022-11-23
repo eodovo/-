@@ -1,0 +1,167 @@
+body {
+  background-color: #f5f5f5;
+}
+a {
+  text-decoration: none;
+}
+form {
+  margin: 2% auto;
+  background-color: #fff;
+  width: 50%;
+  text-align: center;
+  border-radius: 20px;
+  padding-bottom: 2%;
+}
+.hidden {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  left: -1000%;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  color: #fff;
+}
+.logo {
+  margin: 50px auto 0;
+  display: block;
+  width: 333px;
+  height: 100px;
+}
+
+#title {
+  text-align: center;
+}
+
+fieldset {
+  width: 500px;
+  margin: 0 auto;
+  border: none;
+}
+input {
+  border: none;
+  display: block;
+  margin: 20px 0;
+  width: 480px;
+  height: 50px;
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+#name {
+  border-bottom: 2px solid #999;
+}
+.find_input {
+  background: #ddd;
+  border: none;
+  border-bottom: none;
+}
+.signup,
+.go_join,
+.find {
+  display: block;
+  width: 500px;
+  background-color: #da291c;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+}
+.signup,
+.find {
+  height: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.go_join {
+  display: block;
+  width: 500px;
+  background-color: #da291c;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+  height: 50px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  line-height: 3em;
+}
+
+ul {
+  list-style: none;
+  overflow: hidden;
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+ul li {
+  margin: 30px auto;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+}
+ul li:last-child {
+  float: right;
+}
+ul li span {
+  margin-left: 20px;
+}
+ul li i {
+  margin-right: 8px;
+}
+
+#join_button {
+  position: relative;
+}
+
+/*find*/
+.telBox {
+  clear: both;
+  margin: -20px 0;
+}
+.telBox select {
+  width: 135px;
+  border: 0px;
+  font-size: 18px;
+  color: #333;
+  height: 60px;
+  background: #ddd;
+  height: 50px;
+  padding: 7px;
+}
+.telBox input {
+  width: 135px;
+  display: inline;
+}
+
+#id_input_button .go li {
+  margin: 20px 0 40px 50px;
+  width: auto;
+  text-align: center;
+}
+#id_input_button .go li:nth-of-type(2) {
+  padding-left: 65px;
+}
+
+#id_input_button .go li:last-of-type a {
+  margin-right: 50px;
+}
+
+.loadtexton {
+  text-align: center;
+  border: 1px dashed #ccc;
+  width: 500px;
+  overflow: hidden;
+  margin: 20px 0 20px -250px;
+  position: relative;
+  left: 50%;
+  border-radius: 10px;
+  display: block;
+  padding: 20px 0;
+  line-height: 1.5em;
+}
+.loadtexton strong:first-of-type {
+  font-size: 20px;
+  line-height: 2em;
+}

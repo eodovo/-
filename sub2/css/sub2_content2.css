@@ -1,0 +1,154 @@
+#content {
+    height: 2600px;
+}
+
+.contentArea div:first-child {
+    height: 1000px;
+
+}
+
+#content .titleArea h2 span {
+    color: #da291c;
+}
+
+#content .titleArea h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -60%;
+    width: 1px;
+    height: 60px;
+    background-color: #da291c;
+
+}
+
+.contentArea .section1 {
+    margin-top: 110px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contentArea p {
+    float: left;
+    width: 500px;
+    height: 160px;
+    font-size: 18px;
+    line-height: 1.8em;
+    text-align: justify;
+    font-weight: 500;
+    border-bottom: 2px solid #da291c;
+    color: #666;
+}
+
+.contentArea .section1 p:nth-of-type(1) {
+    float: none;
+    width: 900px;
+    border: none;
+    margin: 0 auto 120px;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 2.3em;
+    font-weight: 550;
+    color: #333;
+}
+
+.contentArea h3 {
+    font-size: 2.1875rem;
+    font-weight: bold;
+    margin-bottom: 70px;
+    margin-left: 30px;
+    clear: both;
+}
+
+.contentArea h3::before {
+    position: absolute;
+    left: 0px;
+    content: "";
+    background-color: rgb(218, 41, 28);
+    width: 5px;
+    height: 33px;
+    margin-top: 5px;
+}
+
+.contentArea a {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    margin: 35px 0 0 60px;
+    padding: 8px;
+    border: 1px solid #333;
+}
+
+.contentArea img {
+    float: right;
+    border-radius: 80px 0 0 0;
+    box-shadow: 15px 15px 20px rgb(0 0 0 / 20%);
+    margin-right: 30px;
+    transition: all 0.3s ease-out;
+}
+
+.contentArea img:hover {
+    transform: scale(1.05);
+}
+
+.contentArea span:nth-of-type(1) {
+    width: 460px;
+    height: 2px;
+    background: #dadada;
+    float: left;
+    clear: both;
+}
+
+.contentArea span:nth-of-type(2) {
+    width: 140px;
+    height: 5px;
+    background: #003660;
+    float: left;
+    clear: both;
+    z-index: 2;
+    margin-top: -1px;
+}
+
+.contentArea span:nth-of-type(3) {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    clear: both;
+}
+
+.contentArea i {
+    margin-right: 10px;
+}
+
+
+
+/* 섹션1 */
+
+
+.contentArea .section1 p:nth-of-type(2) {
+    float: left;
+    width: 450px;
+    height: 160px;
+    font-size: 18px;
+    line-height: 1.8em;
+    text-align: justify;
+}
+
+
+
+/* 섹션2 */
+.contentArea .section2 {
+    height: 700px;
+    position: relative;
+}
+
+/* 섹션3 */
+.contentArea .section3 {
+    position: relative;
+}
+
+.contentArea .section3 p {
+    height: 190px;
+}

@@ -1,0 +1,254 @@
+#content {
+    height: 1150px;
+}
+
+#content .titleArea h2 {
+    width: 1200px;
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 70px 0 100px;
+}
+
+#content h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contentArea {
+    position: relative;
+}
+
+.contentArea .social dt {
+    font-size: 36px;
+    line-height: 1.5em;
+    width: 660px;
+    margin-bottom: 100px;
+}
+
+.contentArea .social dt::after {
+    content: '';
+    background-color: #da291c;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 380px
+}
+
+.contentArea .social dd {
+    font-size: 18px;
+    text-align: left;
+    line-height: 2em;
+}
+
+.contentArea .social dd:nth-of-type(2) {
+    width: 550px;
+}
+
+.contentArea .social dd:nth-of-type(3) {
+    width: 550px;
+}
+
+.contentArea .social dd:nth-of-type(4) {
+    width: 480px;
+}
+
+.imgSection {
+    position: relative;
+}
+
+.imgSection img {
+    position: absolute;
+    right: 0;
+    bottom: -130px;
+}
+
+.imgSection img:nth-of-type(1) {
+    z-index: 3;
+    padding: 40px 50px 70px
+}
+
+@keyframes bounce_frames {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+.imgSection .circle span {
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #d8aa6e;
+    color: #FFF;
+    line-height: 120px;
+    position: absolute;
+    z-index: 9;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.imgSection .circle span:nth-of-type(1) {
+    right: 155px;
+    bottom: 250px;
+    animation: bounce_frames 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: 1;
+}
+
+.imgSection .circle span:nth-of-type(2) {
+    right: 330px;
+    top: 0px;
+    animation: bounce_frames .7s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: 1;
+}
+
+.imgSection .circle span:nth-of-type(3) {
+    right: -40px;
+    top: 0px;
+    animation: bounce_frames .9s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: 1;
+}
+
+.imgSection .dot span {
+    font-weight: bold;
+    position: absolute;
+    z-index: 9;
+    font-size: 21px
+}
+
+.imgSection .dot span::before {
+    content: "●";
+    position: absolute;
+    top: -25px;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #003660;
+}
+
+.imgSection span:nth-of-type(1)::before {
+    top: -19px;
+    right: -7px;
+}
+
+.imgSection span:nth-of-type(2)::before {
+    top: -19px;
+    right: 6px;
+}
+
+.imgSection span:nth-of-type(3)::before {
+    top: 34px;
+    right: 6px;
+}
+
+.imgSection .dot span:nth-of-type(1) {
+    right: 340px;
+    bottom: 180px;
+}
+
+.imgSection .dot span:nth-of-type(2) {
+    right: -20px;
+    bottom: 180px;
+}
+
+.imgSection .dot span:nth-of-type(3) {
+    right: 140px;
+    bottom: -110px;
+}
+
+/* 섹션1 */
+.section1 {
+    width: 2000px;
+    height: 400px;
+    margin-left: -1000px;
+    margin-top: 100px;
+    position: relative;
+    left: 50%;
+    overflow: hidden;
+    background: url(../images/content2/eco.jpg);
+    z-index: -3;
+    text-align: left;
+    color: #fff;
+}
+
+.section1 h3 {
+    margin: 40px 0 30px 20%;
+    color: #fff;
+}
+
+.section1 dl:nth-of-type(1) {
+    margin-left: 20%;
+}
+
+.section1 dl {
+    text-align: center;
+    margin-right: 10%;
+    width: 300px;
+    float: left;
+    position: relative;
+}
+
+.section1 dl dt {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.section1 dl dt::before {
+    content: '';
+    width: 300px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+.section1 dl dt::after {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 35px;
+}
+
+.section1 dl dd {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.section1 dl dd:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.section1 dl span {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section1 dl span::before {
+    content: '';
+    width: 300px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+}

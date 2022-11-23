@@ -1,0 +1,669 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: 'Nanum Gothic', 'Open Sans';
+    font-size: 16px;
+    color: #333
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+address {
+    font-style: normal
+}
+
+a {
+    color: #333;
+    text-decoration: none
+}
+
+img {
+    border: 0;
+    vertical-align: top
+}
+
+.hidden {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: -1000%;
+    width: 1px;
+    height: 1px;
+    color: #fff;
+}
+
+#skipNav {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 60;
+}
+
+#skipNav a {
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+    font-size: 1.2em;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav:active {
+    height: auto;
+    padding: 10px 0;
+    background: #003660;
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Nanum Gothic',sans-serif; */
+
+
+/* header 공통영역 */
+#headerArea {
+    position: fixed;
+    left: 0;
+    top: 0%;
+    z-index: 100;
+    width: 100%;
+    height: 210px;
+    background: rgba(0, 0, 0, .3);
+
+}
+
+
+#headerArea .headerInner {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#headerArea .headerInner h1 a {
+    display: block;
+    background: url(../images/mainlogo.png) 0 0 no-repeat;
+    background-size: 333px 104px;
+    height: 140px;
+    background-position: center;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.headerInner .topMenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 60px auto;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+
+}
+
+.headerInner .topMenu li {
+    float: left;
+    margin-left: 25px;
+    position: relative;
+}
+
+
+.headerInner .topMenu li:nth-child(1)::before {
+    content: '';
+    width: 2px;
+    height: 13px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: -15px;
+}
+
+.headerInner .topMenu li a {
+    display: block;
+    color: #fff;
+}
+
+/* .headerInner .topMenu li a:hover {
+    color: #003660;
+} */
+
+
+
+
+
+#gnb ul li h3 a {
+    margin-top: 20px;
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+    transition: all 0.2s ease-in;
+}
+
+
+
+/* footer 공통영역 */
+
+
+#footerArea .linkWrap {
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    width: 2000px;
+    margin-left: -1000px;
+    height: 80px;
+    background: #f1f0f0;
+}
+
+#footerArea .footerInner .footLink {
+    height: 200px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#footerArea .linkWrap .footLink ul {
+    overflow: hidden;
+}
+
+#footerArea .linkWrap .footLink li {
+    display: block;
+    margin: 0 auto;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    text-indent: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#footerArea .linkWrap .footLink li a {
+    transition: all 0.3s;
+}
+
+#footerArea .linkWrap .footLink li a:hover {
+    color: #da291c;
+}
+
+#footerArea .linkWrap .footLink:nth-child(1) {
+    margin-left: 680px;
+}
+
+
+#footerArea {
+    position: relative;
+    left: 50%;
+    width: 2000px;
+    margin-left: -1000px;
+    height: 310px;
+    background: #f8f8f8;
+}
+
+#footerArea .footerInner {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#footerArea .footerInner img {
+    float: left;
+    width: 250px;
+    margin-top: 70px;
+}
+
+#footerArea .footerInner .info {
+    float: left;
+    line-height: 1.5em;
+    height: 200px;
+    margin: 80px 0 0 20px;
+
+}
+
+#footerArea .footerInner .sns {
+    transition: all 0.3s;
+    float: right;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+#footerArea .footerInner .sns li {
+    float: right;
+}
+
+.footerInner .sns ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #999;
+    border-radius: 500px;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.footerInner .sns ul li:nth-child(1) a {
+    background: url(../images/youtube.png) no-repeat;
+}
+
+.footerInner .sns ul li:nth-child(2) a {
+    background: url(../images/twitter.png) no-repeat;
+}
+
+.footerInner .sns ul li:nth-child(3) a {
+    background: url(../images/facebook.png) no-repeat;
+}
+
+.footerInner .sns ul li:nth-child(4) a {
+    background: url(../images/instagram.png) no-repeat;
+}
+
+
+.footerInner .sns ul li:nth-child(1) a:hover {
+    background: url(../images/youtube2.png) no-repeat;
+}
+
+.footerInner .sns ul li:nth-child(2) a:hover {
+    background: url(../images/twitter2.png) no-repeat;
+}
+
+.footerInner .sns ul li:nth-child(3) a:hover {
+    background: url(../images/facebook2.png) no-repeat;
+}
+
+.footerInner .sns ul li:nth-child(4) a:hover {
+    background: url(../images/instagram2.png) no-repeat;
+}
+
+
+
+#footerArea .family {
+    width: 250px;
+    background: #fff;
+    position: relative;
+    float: right;
+}
+
+#footerArea .family a {
+    display: block;
+    padding: 20px 0 20px 20px;
+    background: #f1f0f0;
+    color: #333;
+    font-size: 16px;
+    transition: all .5s;
+    border-radius: 13px;
+}
+
+#footerArea .family>a:hover {
+    background: #da291c;
+    color: #fff;
+}
+
+
+#footerArea .family ul {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 250px;
+    display: none;
+}
+
+#footerArea .family ul a {
+    display: block;
+    padding: 20px 0 20px 20px;
+    background: #f8f8f8;
+    border-radius: 0;
+}
+
+#footerArea .family ul a:hover {
+    background: #da291c;
+    color: #fff;
+}
+
+#footerArea .family a i {
+    font-size: 19px;
+    margin-left: 90px;
+}
+
+/* navbar */
+
+
+#headerArea {
+    width: 100%;
+    height: 230px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 10;
+    transition: background .5s;
+    color: #fff;
+}
+
+#headerArea .headerInner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#gnb {
+    clear: both;
+    width: 1200px;
+}
+
+#gnb ul.dropdownmenu {
+    float: left;
+    width: 100%;
+}
+
+#gnb ul.dropdownmenu li.menu {
+    position: relative;
+    float: left;
+    width: 16.66%;
+    transition: all .1s;
+}
+
+#gnb ul.dropdownmenu .menu .dot {
+    position: absolute;
+    left: 90px;
+    top: 40px;
+    width: 5px;
+    height: 5px;
+    color: #da291c;
+    transition: all .1s;
+    opacity: 0;
+}
+
+#gnb ul.dropdownmenu li a.depth1 {
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    transition: all .5s;
+
+}
+
+
+/* 2depth */
+#gnb ul.dropdownmenu li ul {
+    width: 100%;
+    height: 205px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    padding: 15px 0;
+    line-height: 2em;
+    display: none;
+    transition: all .3s;
+
+}
+
+#gnb ul.dropdownmenu li ul li {
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+#gnb ul.dropdownmenu li ul li a {
+    display: block;
+    transition: all .5s;
+}
+
+
+
+/* // 2depth a 호버효과 */
+#gnb ul.dropdownmenu .menu ul li a::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    background: #003660;
+    bottom: -3px;
+    left: 27%;
+    transition: all .2s ease-out;
+}
+
+#gnb ul.dropdownmenu .menu ul li a:hover::after {
+    width: 48%;
+    transition: all.5s ease-out;
+}
+
+
+/* 맨위로 */
+.topMoveBox {
+    position: fixed;
+    left: 60%;
+    margin-left: 520px;
+    bottom: 135px;
+}
+
+.topMoveBox a {
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/topMove.png)0 0 no-repeat #da291c;
+    transition: background .5s;
+}
+
+.topMoveBox a:hover {
+    background-position: 0 -50px;
+}
+
+.search {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 15%);
+    height: 500px;
+    /* height: 0; */
+    overflow: hidden;
+    /* transition: height .3s; */
+    display: none;
+}
+
+.search .searchInner {
+    width: 720px;
+    height: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+
+.searchInner p {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.045rem;
+    padding: 110px 0 0;
+}
+
+.searchInner input:nth-of-type(1) {
+    padding: 60px 0 15px;
+    border: none;
+    border-bottom: 2px solid;
+    display: inline;
+    font-size: 20px;
+    width: 700px;
+    font-weight: bold;
+    outline: none;
+}
+
+.searchInner #closeBtn {
+    display: block;
+    position: absolute;
+    right: -34.5%;
+    top: 10%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    transition: all .8s;
+}
+
+.searchInner #closeBtn:hover {
+    color: #da291c;
+}
+
+.searchInner dt {
+    display: inline-block;
+    color: red;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: -2px;
+    margin-top: 50px;
+    width: 100px;
+    margin-top: 83px;
+}
+
+.searchInner dd {
+    padding-left: 100px;
+    margin-top: -50px;
+}
+
+.searchInner dl dd a {
+    display: inline-block;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    padding: 11px 0;
+    width: 130px;
+    line-height: 1.25em;
+    margin: 0 10px 21px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.searchInner #innerZoom {
+    position: absolute;
+    bottom: 53%;
+    left: 90%;
+    width: 50px;
+    font-size: 33px;
+    text-indent: -9999px;
+    color: #fff;
+    border: none;
+    background: url(../images/search.png) 0 0 no-repeat;
+    cursor: pointer;
+}

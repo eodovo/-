@@ -1,0 +1,174 @@
+#content {
+    height: 2200px;
+    position: relative;
+}
+
+
+#content h2 span {
+    color: #da291c;
+}
+
+#content .titleArea h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -60%;
+    width: 1px;
+    height: 60px;
+    background-color: #da291c;
+}
+
+.contentArea .section1 {
+    margin-top: 110px;
+    height: 600PX;
+}
+
+.contentArea .section1 p {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.section1 .circle div:last-child {
+    margin-right: 0;
+}
+
+.section1 .circle {
+    margin-top: 250px;
+    position: relative;
+    text-align: center;
+
+}
+
+.section1 .circle div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #003660;
+    margin-right: 50px;
+    position: absolute;
+    transition: all 0.3s;
+    box-shadow: 3px 5px rgb(217 217 217);
+}
+
+.section1 .circle div:hover {
+    transform: scale(1.1);
+}
+
+.section1 .circle img {
+    margin-top: 30px;
+}
+
+.section1 .circle div:nth-of-type(1) {
+    left: 0;
+}
+
+.section1 .circle div:nth-of-type(2) {
+    left: 210px;
+    top: -130px;
+}
+
+.section1 .circle div:nth-of-type(3) {
+    left: 410px;
+}
+
+.section1 .circle div:nth-of-type(4) {
+    left: 610px;
+    top: -130px;
+}
+
+.section1 .circle div:nth-of-type(5) {
+    left: 820px;
+}
+
+.section1 .circle div:nth-of-type(6) {
+    right: 0;
+}
+
+.section1 .circle div p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+
+.section1 .line {
+    position: relative;
+}
+
+.section1 .line span {
+    width: 110px;
+    height: 2px;
+    background: #333;
+    display: block;
+    position: absolute;
+}
+
+.section1 .line span:nth-of-type(1) {
+
+    left: 120px;
+    transform: rotate(150deg);
+}
+
+.section1 .line span:nth-of-type(2) {
+
+    left: 330px;
+    transform: rotate(30deg);
+}
+
+.section1 .line span:nth-of-type(3) {
+
+    left: 520px;
+    transform: rotate(150deg);
+}
+
+.section1 .line span:nth-of-type(4) {
+
+    right: 350px;
+    transform: rotate(30deg);
+}
+
+.section1 .line span:nth-of-type(5) {
+
+    right: 140px;
+    top: 70px;
+
+}
+
+/* 섹션2 */
+
+
+
+.section2 dl {
+    height: 150px;
+    border-top: 2px solid #003660;
+    padding-top: 60px;
+    font-size: 18px;
+
+}
+
+
+.section2 dl dt {
+    display: inline-block;
+    margin-left: 120px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.section2 dl dd {
+    width: 900px;
+    line-height: 2em;
+    float: right;
+}
+
+.section2 dl:nth-of-type(6) {
+    border-bottom: 2px solid #003660;
+    height: 90px;
+}

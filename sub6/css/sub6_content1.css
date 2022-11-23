@@ -1,0 +1,103 @@
+#content {
+    height: 3100px;
+    position: relative;
+}
+
+
+#content h2 span {
+    color: #da291c;
+}
+
+#content .titleArea h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -60%;
+    width: 1px;
+    height: 60px;
+    background-color: #da291c;
+}
+
+
+.contentArea .section1 {
+    margin-top: 200px;
+}
+
+.contentArea h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.contentArea p {
+    margin-top: 10px;
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.contentArea table {
+    width: 100%;
+}
+
+.contentArea thead {
+    text-align: center;
+}
+
+.contentArea thead tr {
+    line-height: 2em;
+
+}
+
+.contentArea thead th {
+    border-top: 2px solid #333;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.contentArea tbody {
+    text-align: center;
+    border-bottom: 2px solid #333;
+
+}
+
+.contentArea tbody tr {
+    font-weight: 700;
+    line-height: 2em;
+}
+
+.contentArea tbody td {
+    padding: 25px;
+    border-bottom: 1px dotted #666;
+}
+
+.contentArea tfoot {
+    color: #da291c;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+/* 두 번째 표 */
+
+
+.contentArea .section2 {
+    margin-top: 100px;
+}
+
+.section2 tr>td:first-child {
+    text-align: center;
+}
+
+.section2 #grade {
+    text-align: center;
+}
+
+.section2 #center {
+    width: 50%;
+}
+
+.section2 td {
+    text-align: left;
+    word-break: keep-all;
+}

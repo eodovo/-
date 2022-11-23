@@ -1,0 +1,178 @@
+<?
+           session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업소개-사업장안내</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content5.css">
+    <script src="https://kit.fontawesome.com/6c4383a4e3.js" crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=439d13c025aa2211bfad6c054c8c25b4"></script>
+    <script src="./js/map.js"></script>
+</head>
+
+<body>
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+        <img src="../sub1/images/content1/main.jpg" alt="메인이미지">
+        <h3>기업소개</h3>
+    </div>
+
+    <div class="subNav">
+        <ul>
+            <li><a href="./sub1_1.html">회사현황</a></li>
+            <li><a href="./sub1_2.html">비전</a></li>
+            <li><a href="./sub1_3.html">CI</a></li>
+            <li><a href="./sub1_4.html">연혁</a></li>
+            <li class="current"><a href="./sub1_5.html">사업장안내</a></li>
+        </ul>
+    </div>
+
+    <article id="content">
+        <div class="titleArea">
+            <div class="lineMap">
+                <span><i class="fa-solid fa-house"></i></span>&gt; <span>기업소개</span>&gt;
+                <strong>사업장안내</strong>
+            </div>
+            <h2>사업장안내</h2>
+        </div>
+        <div class="contentArea">
+            <!-- 메인컨텐츠들 여기다가 입력 -->
+            <div class="intro">
+                <p id="map1">시민과 미래를 향해 열려있는 롯데정밀화학</p>
+                <p>오늘보다 더 기대되는 내일을 향해, 끊임없는 도전으로 새로운 미래를 열어갑니다.</p>
+            </div>
+            <section class="ulsan">
+                <h3>울산사업장 (본사)</h3>
+                <div id="ulsanMap"></div>
+                <div>
+                    <p><span class="hidden" id="map2">차량아이콘</span><i class="fa-solid fa-car"></i>주소 및 연락처</p>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>(44714) 울산 남구 여천로217번길 19(여천동)</dd>
+                        <dt>전화</dt>
+                        <dd> 052 - 270 - 6114</dd>
+                        <dt>팩스</dt>
+                        <dd>052 - 272 - 7925</dd>
+                    </dl>
+
+                    <span>
+                        <a href="http://kko.to/fCk9XC1ip" target="_blank" title="빠른길찾기 새탭에서 열림">
+                            <span class="hidden">지도모양 아이콘</span>
+                            <i class="fa-solid fa-location-dot"></i>카카오맵 빠른 길 찾기
+                            <span class="hidden">화살표 아이콘</span>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="http://kko.to/DlMFvK5m4" target="_blank" title="카카오맵 크게 보기 새탭에서 열림"><i
+                                class="fa-solid fa-magnifying-glass"></i>카카오맵 크게
+                            보기<span class="hidden">화살표 아이콘</span><i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </span>
+                </div>
+            </section>
+
+
+            <section class="seoul">
+                <h3>서울사업장</h3>
+                <div id="seoulMap"></div>
+                <div>
+                    <p><span class="hidden" id="map3">차량아이콘</span><i class="fa-solid fa-car"></i>주소 및 연락처</p>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>(06181) 서울특별시 강남구 테헤란로 534
+                            (대치동) 글라스타워빌딩26, 27층</dd>
+                        <dt>전화</dt>
+                        <dd>02 - 6974 - 4500</dd>
+                        <dt>팩스</dt>
+                        <dd>02 - 6974 - 4546</dd>
+                    </dl>
+                    <span><a href="http://kko.to/DRp5dm9YJ" target="_blank" title="빠른길찾기 새탭에서 열림"><i
+                                class="fa-solid fa-location-dot"></i>카카오맵 빠른 길 찾기 <span class="hidden">화살표
+                                아이콘</span><i class="fa-solid fa-arrow-right-long"></i></a></span>
+                    <span><a href="http://kko.to/ullz-cm_W" target="_blank" title="카카오맵 크게 보기 새탭에서 열림"><i
+                                class="fa-solid fa-magnifying-glass"></i>카카오맵 크게
+                            보기<span class="hidden">화살표 아이콘</span><i class="fa-solid fa-arrow-right-long"></i></a></span>
+                </div>
+            </section>
+
+
+
+            <section class="incheon">
+                <h3>인천사업장</h3>
+                <div id="incheonMap"></div>
+                <div>
+                    <p><span class="hidden">차량아이콘</span><i class="fa-solid fa-car"></i>주소 및 연락처</p>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>(21700) 인천 남동구 남동대로79번길 47
+                            (고잔동) 남동공단 129B 4L</dd>
+                        <dt>전화</dt>
+                        <dd>032 - 816 - 5981</dd>
+                        <dt>팩스</dt>
+                        <dd>032 - 816 - 5981</dd>
+                    </dl>
+                    <span><a href="http://kko.to/u1PHSgiTJ" target="_blank" title="빠른길찾기 새탭에서 열림"><i
+                                class="fa-solid fa-location-dot"></i>카카오맵 빠른 길 찾기 <span class="hidden">화살표
+                                아이콘</span><i class="fa-solid fa-arrow-right-long"></i></a></span>
+                    <span><a href="http://kko.to/B_cesZzRj" target="_blank" title="카카오맵 크게 보기 새탭에서 열림"><i
+                                class="fa-solid fa-magnifying-glass"></i>카카오맵 크게
+                            보기<span class="hidden" id="Shanghai">화살표 아이콘</span><i
+                                class="fa-solid fa-arrow-right-long"></i></a></span>
+                </div>
+            </section>
+            <section class="foreign">
+                <h3>해외사업장</h3>
+                <ul>
+                    <li>
+                        <img src="./images/content5/map1.jpg" alt="중국법인 이미지">
+                        <p>중국법인</p>
+                        <p>Rm 2212, Hang Seng Bank Tower, 1000 Lujiazui Ring Rd, Shanghai, China 200120</p>
+                        <p><span>TEL</span> +86 - 21 - 6270 - 3936</p>
+                        <span><a href="#">지도보기<span class="hidden">지도보기 아이콘</span><i
+                                    class="fa-solid fa-angle-down"></i></a></span>
+                    </li>
+                    <li id="eu1">
+                        <img src="./images/content5/map2.jpg" alt="유럽법인 이미지">
+                        <p>유럽법인</p>
+                        <p>Ober der Roeth 4, 65824 Schwalbach am Taunus, Germany</p>
+                        <p><span>TEL</span> 49 - 6196 - 772 - 7530</p>
+                        <span><a href="#">지도보기<span class="hidden">지도보기 아이콘</span><i
+                                    class="fa-solid fa-angle-down"></i></a></span>
+                    </li>
+                    <li>
+                        <img src="./images/content5/map3.jpg" alt="유럽 TS 이미지">
+                        <p>유럽 T/S센터</p>
+                        <p>C/O Technologie- und Innovationszentrum Giessen GmbH, Winchesterstrasse 2, 35394 Giessen,
+                            Germany</p>
+                        <p><span>TEL </span>49 - 641 - 9392 - 7963</p>
+                        <span><a href="#">지도보기<span class="hidden">지도보기 아이콘</span><i
+                                    class="fa-solid fa-angle-down"></i></a></span>
+                    </li>
+                    <li id="usa">
+                        <img src="./images/content5/map4.jpg" alt="미주사무소 이미지">
+                        <p>미주사무소</p>
+                        <p>840 Gessner Road, Suite 500 Houston, Texas, USA (77024)</p>
+                        <p><span>TEL</span> 1-713-904-3378</p>
+                        <span><a href="#">지도보기<span class="hidden">지도보기 아이콘</span><i
+                                    class="fa-solid fa-angle-down"></i></a></span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+
+</body>
+
+</html>

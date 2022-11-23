@@ -1,0 +1,138 @@
+#content {
+    position: relative;
+}
+
+
+#content h2 span {
+    color: #da291c;
+}
+
+#content .titleArea h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -60%;
+    width: 1px;
+    height: 60px;
+    background-color: #da291c;
+}
+
+.contentArea .section1 {
+    margin-top: 110px;
+}
+
+.contentArea .section1 div p {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.section1 .hgroup {
+    position: relative;
+    height: 200px;
+}
+
+.section1 .hgroup .all {
+    position: absolute;
+    right: 10px;
+    font-size: 45px;
+    bottom: 20px;
+    color: #666;
+    transition: all .3s;
+}
+
+.section1 .hgroup .all:hover {
+    transform: scale(1.03);
+    color: #da291c;
+}
+
+.section1 .q {
+    border-top: 1px solid #003366;
+}
+
+.section1 .q a.trigger {
+    font-weight: bold;
+    display: block;
+    padding: 40px 15px;
+    color: #333;
+}
+
+.section1 .hide .q a.trigger {
+    font-weight: bold;
+    background: none;
+    transition: all .3s;
+}
+
+.section1 .q a.trigger:hover,
+.section1 .q a.trigger:active,
+.section1 .q a.trigger:focus {
+    color: #333
+}
+
+.section1 .a {
+    max-width: 950px;
+    line-height: 2em;
+    text-align: left;
+    padding: 30px 120px 30px 95px;
+    border-top: 1px dotted #bbb;
+    display: none;
+    overflow: hidden;
+}
+
+.hidden {
+    display: block;
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.section1 ul {
+    margin-bottom: 100px;
+}
+
+.section1 ul li p {
+    padding-left: 80px;
+    position: relative;
+}
+
+.section1 ul li p:nth-of-type(2) {
+    background-color: #f8f8f8;
+}
+
+.section1 ul li .q::after {
+    content: 'Q';
+    position: absolute;
+    left: 35px;
+    bottom: 37px;
+    color: #003366;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.section1 ul li .a::after {
+    content: 'A';
+    position: absolute;
+    left: 35px;
+    bottom: 36%;
+    color: #003366;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.section1 ul li:last-child {
+    border-bottom: 1px solid #003366;
+}
+
+.section1 ul li span {
+    right: 100px;
+    bottom: 37px;
+    position: absolute;
+    font-size: 27px;
+    color: #666;
+
+}

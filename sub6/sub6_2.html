@@ -1,0 +1,250 @@
+<?
+           session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투자정보-주식현황</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content2.css">
+    <script src="https://kit.fontawesome.com/6c4383a4e3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="../common/js/prefixfree.min.js"></script> -->
+</head>
+
+<body>
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+        <img src="../sub6/common/imgaes/main.jpg" alt="메인이미지">
+        <h3>투자정보</h3>
+    </div>
+
+    <div class="subNav">
+        <ul>
+
+            <li><a href="./sub6_1.html">신용등급</a></li>
+            <li class="current"><a href="./sub6_2.html">주식현황</a></li>
+            <li><a href="./sub6_3.html">이익배당</a></li>
+        </ul>
+    </div>
+
+    <article id="content">
+        <div class="titleArea">
+            <div class="lineMap">
+                <span><i class="fa-solid fa-house"></i></span>&gt; <span>투자정보</span>&gt;
+                <strong>주식현황</strong>
+            </div>
+            <h2>주식현황</h2>
+        </div>
+        <div class="contentArea">
+            <!-- 메인컨텐츠들 여기다가 입력 -->
+            <div class="section1">
+                <h3>주식발행내역</h3>
+                <p>2021. 12. 31. 기준 / 단위 : 주, 백만 원</p>
+                <table>
+                    <caption class="hidden">주식발행내역</caption>
+                    <thead>
+                        <tr>
+                            <th>종류</th>
+                            <th>발행주식수</th>
+                            <th>액면가액 총액</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>보통주</td>
+                            <td>25,800,000</td>
+                            <td>129,000</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>우선주</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>합계</td>
+                            <td>25,800,000</td>
+                            <td>129,000</td>
+                            <td>-</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="section2">
+                <h3>주주현황</h3>
+                <p>2021. 12. 31. 기준 / 단위 : 주, %</p>
+                <table>
+                    <caption class="hidden">2021. 12. 31. 기준 / 단위 : 주, %</caption>
+                    <thead>
+                        <tr>
+                            <th>주주명</th>
+                            <th>주식종류</th>
+                            <th>소유주식수</th>
+                            <th>비율</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>롯데케미칼</td>
+                            <td rowspan="6">보통주</td>
+                            <td>8,313,967</td>
+                            <td>32.22</td>
+                            <td>최대주주</td>
+                        </tr>
+                        <tr>
+                            <td>국민연금공단</td>
+                            <td>3,321,337</td>
+                            <td>12.87</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Hermes</td>
+                            <td>1,218,409</td>
+                            <td>4.72</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>자사주</td>
+                            <td>330,000</td>
+                            <td>1.28</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>외국인</td>
+                            <td>4,323,208</td>
+                            <td>16.76</td>
+                            <td>Hermes 제외</td>
+                        </tr>
+                        <tr>
+                            <td>기타</td>
+                            <td>8,293,079</td>
+                            <td>32.15</td>
+                            <td>기관/개인</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>합계</td>
+                            <td>보통주</td>
+                            <td>25,800,000</td>
+                            <td>100.00</td>
+                            <td>-</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="section3">
+                <div class="inner1">
+                    <h3>주주구성 비율</h3>
+                    <p>2021.12.31. 기준</p>
+                    <table>
+                        <caption class="hidden">주주구성 비율</caption>
+                        <thead>
+                            <tr>
+                                <th>주주명</th>
+                                <th>비율</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>롯데케미칼</td>
+                                <td>32.22%</td>
+                            </tr>
+                            <tr>
+                                <td>외국인투자가</td>
+                                <td>21.48%</td>
+                            </tr>
+                            <tr>
+                                <td>기관투자가</td>
+                                <td>22.29%</td>
+                            </tr>
+                            <tr>
+                                <td>개인투자가</td>
+                                <td>22.73%</td>
+                            </tr>
+                            <tr>
+                                <td>자사주</td>
+                                <td>1.28%</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>계</td>
+                                <td>100%</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="inner2">
+                    <div class="chart1">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="label">
+                        <ul>
+                            <li>
+                                <span>32.22%</span>롯데캐미칼
+                            </li>
+                            <li>
+                                <span>21.48%</span>외국인투자가
+                            </li>
+                            <li>
+                                <span>22.29%</span>기관투자가
+                            </li>
+                            <li>
+                                <span>22.73%</span>개인투자가
+                            </li>
+                            <li>
+                                <span>1.28% </span>자사주
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    <script>
+        const data = {
+            datasets: [{
+                label: '주주구성 비율 그래프',
+                data: [32.22, 21.48, 22.29, 22.73, 1.28],
+                backgroundColor: [
+                    '#da291c',
+                    '	#DC143C',
+                    '	#F08080	',
+                    '	#FFB6C1',
+                    '#999'
+                ],
+                hoverOffset: 5
+            }]
+        };
+
+        const config = {
+            type: 'doughnut',
+            data: data,
+        };
+
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+
+    </script>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/chart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.gallery {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: #333;
+    /* overflow: hidden; */
+    width: 2000px;
+    height: 1000px;
+}
+
+/* .gallery ul {
+    overflow: hidden;
+} */
+
+.gallery li {
+    display: none;
+    position: relative;
+}
+
+.gallery img {
+    animation: ani 30s linear infinite;
+}
+
+@keyframes ani {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.gallery li strong {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    top: 380px;
+    font-size: 3.4375rem;
+    color: #fff;
+    width: 100%;
+}
+
+.gallery li span {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    top: 480px;
+    font-size: 1.6rem;
+    color: #fff;
+    width: 100%;
+    line-height: 2em;
+}
+
+
+
+
+/* .gallery .link1 span{ left:  100px; top: 300px;} */
+
+.dock {
+    width: 330px;
+    position: absolute;
+    left: 45%;
+    top: 70%;
+}
+
+.dock .mbutton {
+    margin-right: 15px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all .5s
+}
+
+.dock .ps {
+    margin-right: 15px;
+    margin-top: -5px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    position: absolute;
+    right: 3%;
+    top: -3px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.dock .ps:hover {
+    color: rgb(218, 41, 28);
+}
+
+.main .btn {
+    display: block;
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: 150px;
+    cursor: pointer;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 10px;
+    opacity: 0.7;
+    color: #fff;
+
+}
+
+.main .btn:hover {
+    opacity: 1;
+    color: #003366;
+}
+
+.main .btn i {
+    transition: all .5s;
+}
+
+.main .btnLeft {
+    left: 50%;
+    top: 40%;
+    margin-left: -780px;
+}
+
+.main .btnRight {
+    left: 50%;
+    top: 40%;
+    margin-left: 700px;
+}

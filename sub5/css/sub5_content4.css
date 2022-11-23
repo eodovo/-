@@ -1,0 +1,74 @@
+#content {
+    height: 1700px;
+    position: relative;
+}
+
+
+#content h2 span {
+    color: #da291c;
+}
+
+#content .titleArea h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -60%;
+    width: 1px;
+    height: 60px;
+    background-color: #da291c;
+}
+
+.contentArea .section1 {
+    margin-top: 110px;
+}
+
+.contentArea .section1 div p {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contentArea .section1 p:nth-of-type(2) {
+    font-size: 1.3em;
+    margin-top: 40px;
+}
+
+.section1 h3 {
+    margin-top: 150px;
+    font-size: 33px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contentArea ul {
+    margin-top: 20px;
+    border-top: 3px solid #003660;
+}
+
+.contentArea ul li {
+    display: inline-block;
+    height: 130px;
+    width: 200px;
+    margin: 80px 0 80px 30px;
+}
+
+.contentArea ul li img {
+    margin-left: 80px;
+}
+
+.contentArea ul li p {
+    margin: 30px 0 0 20px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+}
+
+.contentArea .section2 ul {
+    border-top: 3px solid #0036604d;
+}
+
+.contentArea .section3 ul {
+    border-top: 3px solid #0036604d;
+    border-bottom: 3px solid #003660;
+    ;
+}

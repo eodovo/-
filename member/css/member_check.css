@@ -1,0 +1,314 @@
+/* body {
+  background: url(../images/member_bg.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+html {
+  color: #333;
+}
+body {
+  color: #333;
+}
+.hidden {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: -1000%;
+  width: 1px;
+  height: 1px;
+  color: #fff;
+}
+.logo {
+  margin: 50px auto 0;
+  display: block;
+  width: 333px;
+  height: 100px;
+}
+#content {
+  width: 750px;
+  margin: 30px auto;
+  padding: 70px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.member_tab {
+  padding: 30px 0;
+  border-top: 1px solid #333;
+}
+.member_tab a {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  color: #aaa;
+}
+.member_tab a.on {
+  color: #333;
+  border-bottom: 2px solid #333;
+  font-weight: bold;
+}
+.member_tab span {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.join {
+  text-align: left;
+  position: relative;
+}
+.join h4 {
+  font-size: 20px;
+  margin: 30px 0;
+  color: #333;
+}
+.join span {
+  color: #da291c;
+}
+.join h3 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  color: #333;
+  margin-left: 10px;
+}
+.join h3::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 5px;
+  height: 28px;
+  background: #e8171f;
+}
+.join .policy {
+  padding: 10px;
+  overflow-y: scroll;
+  height: 120px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.join .check {
+  color: #333;
+  margin: 20px 0 60px;
+}
+.join .button {
+  text-align: center;
+  margin-top: 30px;
+}
+.join .button .ok,
+.join .button button,
+.join .allcheck {
+  display: inline-block;
+  width: 200px;
+  line-height: 24px;
+  padding: 8px 0;
+  border: none;
+  background: #e8171f;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 20px;
+  /* transition: all 0.5s; */
+}
+.join .button .cancel {
+  display: inline-block;
+  width: 200px;
+  line-height: 24px;
+  padding: 8px 0;
+  border: none;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+.join .allcheck {
+  background: #f5f5f5;
+  border: 1px solid #333;
+  border-radius: 20px;
+}
+
+input[type="checkbox"] + label::before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 2px solid #999;
+  border-radius: 50%;
+  content: "";
+  margin: 0px 15px -6px 0px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label::before {
+  background-image: url(../images/checked_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #003661;
+  background-size: 12px;
+  /* transition: all 0.5s; */
+}
+.join .button .ok {
+  color: #fff;
+}
+.join .button .ok:active,
+.join .button button:active,
+.join .allcheck:active {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+
+h2:nth-child(1) {
+  font-size: 2.333rem;
+  position: relative;
+}
+h2:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #da291c;
+  border-radius: 50%;
+  left: -2%;
+  top: -5%;
+}
+.intro {
+  margin-top: 10%;
+  border-bottom: 3px solid #333;
+}
+.intro p {
+  margin: 0;
+  display: inline;
+}
+.intro p:nth-of-type(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.intro p:nth-of-type(2) {
+  font-size: 1rem;
+  float: right;
+  color: #666;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.intro span {
+  color: #da291c;
+  margin-right: 10px;
+}
+.intro2 {
+  margin: 30px 0 5% 0;
+}
+.intro2 p {
+  margin: 0 0 10px 0;
+}
+table {
+  margin: 0;
+  border-bottom: 3px solid #999;
+}
+table td input {
+  margin: 3% 0;
+  width: 99%;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background: #f5f5f5;
+  border: 1px solid #999;
+  float: right;
+}
+label {
+  font-size: 1.2rem;
+  text-align: left;
+  word-break: keep-all;
+  margin-right: 15px;
+  display: inline-block;
+  width: 162px;
+}
+table tr th {
+  text-align: left;
+}
+table td {
+  width: 86%;
+}
+
+table .phone {
+  float: right;
+  width: auto;
+}
+table .phone select {
+  width: 106px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background: #f5f5f5;
+  margin-right: 0;
+  text-align: center;
+}
+table .phone input {
+  width: 32%;
+  margin: 2%;
+  margin-right: 0;
+  float: none;
+  text-align: center;
+}
+table .phone span {
+  margin-left: 2%;
+  float: none;
+}
+table #email1,
+#email2 {
+  width: 44%;
+}
+table #email1 + span {
+  margin: 0 3.5%;
+  display: inline-block;
+  margin-top: 5%;
+}
+table #email1 {
+  float: left;
+}
+table #email2 {
+  float: right;
+}
+.check label {
+  width: auto;
+}
+
+table tr th:nth-of-type(6),
+table tr th:nth-of-type(7) {
+  font-size: 1.2rem;
+  text-align: left;
+}
+.add {
+  font-size: 1.2rem;
+}
+label > span {
+  color: #da291c;
+}
+th > span {
+  color: #da291c;
+}
+.save {
+  text-align: center;
+}
+tr td a {
+  margin-top: 5%;
+  display: inline-block;
+  width: 170px;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 1% 2%;
+  margin-bottom: 2%;
+}
+.save a:nth-of-type(2) {
+  background-color: #da291c;
+}

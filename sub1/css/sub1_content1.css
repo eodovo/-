@@ -1,0 +1,181 @@
+/* 기업현황 본문영역 */
+
+
+
+#content {
+    position: relative;
+    height: 2400px;
+}
+
+#content .contentArea .intro {
+    font-size: 3em;
+    color: #333;
+    margin-left: -80px;
+    text-align: center;
+    margin: 110px 0 50px 30px;
+    font-weight: bold;
+}
+
+#content .contentArea .intro span {
+    color: #da291c;
+}
+
+#content .contentArea .intro p:nth-of-type(2) {
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 30px 0 100px 0;
+}
+
+#content .contentArea .mainSection1 {
+    position: relative;
+    margin-bottom: 150px;
+    text-align: justify;
+}
+
+#content .contentArea .mainSection1 p:nth-of-type(1) {
+    position: absolute;
+    right: 330px;
+    bottom: 230px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #003660;
+}
+
+#content .contentArea .mainSection1 p:nth-of-type(2) {
+    width: 430px;
+    position: absolute;
+    right: 160px;
+    bottom: -50px;
+    font-size: 16px;
+    letter-spacing: -1.3px;
+    line-height: 30px;
+}
+
+#content .contentArea .mainSection2 {
+    height: 900px;
+    background: #f8f8f8;
+    position: relative;
+    left: 50%;
+    width: 2000px;
+    margin-left: -1000px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.contentArea .mainSection2 h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 70px 0 120px;
+}
+
+.mainSection2 img {
+    position: absolute;
+    right: 20%;
+}
+
+#content .contentArea .mainSection2 p:nth-of-type(1) {
+    position: absolute;
+    left: 550px;
+    top: 480px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #003660;
+}
+
+#content .contentArea .mainSection2 p:nth-of-type(2) {
+    width: 430px;
+    position: absolute;
+    left: 550px;
+    top: 550px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -1.2px;
+}
+
+
+
+.mainSection2 h3::before {
+    content: '';
+    width: 125px;
+    height: 3px;
+    background: #da291c;
+    position: absolute;
+    top: 150px;
+    left: 940px
+}
+
+
+
+/* 사업장안내 */
+
+
+
+#content .contentArea .businessInfo {
+    margin-top: 100px;
+}
+
+#content .contentArea .businessInfo ul {
+    overflow: hidden;
+}
+
+#content .contentArea .businessInfo ul li {
+    width: 20%;
+    float: left;
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+}
+
+#content .contentArea .businessInfo ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 70px;
+    height: 100px;
+    transform: translateX(-73%);
+}
+
+#content .contentArea .businessInfo ul li:nth-child(1):before {
+    background: url(../images/content1/contract.png) no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+#content .contentArea .businessInfo ul li:nth-child(2):before {
+    background: url(../images/content1/annual.png) no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+#content .contentArea .businessInfo ul li:nth-child(3):before {
+    background: url(../images/content1/document.png) no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+#content .contentArea .businessInfo ul li:nth-child(4):before {
+    background: url(../images/content1/office-building.png) no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+#content .contentArea .businessInfo ul li:nth-child(5):before {
+    background: url(../images/content1/phone-call.png) no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+#content .contentArea .businessInfo dl {
+    width: 200px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+#content .contentArea .businessInfo dl dt {
+    color: #da291c;
+    font-weight: bold;
+
+}

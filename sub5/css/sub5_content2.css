@@ -1,0 +1,221 @@
+#content {
+    position: relative;
+}
+
+.contentArea .intro {
+    margin-top: 110px;
+}
+
+.contentArea .intro p {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+#content h2 span {
+    color: #da291c;
+}
+
+#content .titleArea h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -60%;
+    width: 1px;
+    height: 60px;
+    background-color: #da291c;
+}
+
+#content .section1 {
+    margin-top: 100px;
+    position: relative;
+}
+
+
+
+.contentArea .tab_menu {
+    width: 1200px;
+    height: 70px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.contentArea .tab_menu li {
+    float: left;
+    width: 299px;
+    text-align: center;
+
+}
+
+.contentArea .tab_menu li a {
+    position: relative;
+    display: block;
+    height: 68px;
+    line-height: 68px;
+    font-size: 1.25rem;
+    border: 1px solid #ddd;
+    border-left-width: 0;
+    text-align: center;
+    color: #999;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.contentArea .tab_menu li a:first-child {
+    border-left-width: 1px;
+}
+
+.contentArea .contlist {
+    display: none;
+}
+
+.contentArea .contlist h3 {
+    font-size: 36px;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin-top: 50px;
+    letter-spacing: -1px;
+    position: relative;
+    text-align: center;
+}
+
+.contlist h3::before {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #da291c;
+    position: absolute;
+    left: 46%;
+    bottom: -10px;
+
+}
+
+.contlist {
+    width: 100%;
+    overflow: hidden;
+}
+
+.contlist dl {
+    float: left;
+    border: 3px solid #003366;
+    border-radius: 20px;
+    width: 330px;
+    height: 210px;
+    color: #003366;
+    transition: all 0.5s;
+    margin: 70px 30px 100px 30px;
+}
+
+.contlist .more {
+    margin-top: 0;
+}
+
+.contlist dl:hover {
+    transform: scale(1.02);
+}
+
+.contlist dl dt {
+    border-bottom: 1px dotted #003366;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 20px;
+    transition: all 0.5s;
+}
+
+.contlist dl dd {
+    padding: 20px 20px;
+    line-height: 2em;
+    width: 300px;
+    transition: all 0.5s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contlist dl dd:nth-of-type(2) {
+    display: inline;
+    padding: 10px 10px;
+    margin-left: 11px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.contlist dl dd:nth-of-type(2):hover {
+    color: #fff;
+    background: #003366;
+}
+
+
+.section2 .modal_box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .7;
+    display: none;
+}
+
+.section2 .popup {
+    position: fixed;
+    top: 60%;
+    left: 42%;
+    margin: -300px 0 0 -300px;
+    width: 850px;
+    height: 360px;
+    background: #fff;
+    box-shadow: 1px 3px 7px 0px #666;
+    z-index: 60;
+    border-top: 16px solid #da291c;
+    display: none;
+    padding-left: 50px;
+}
+
+.section2 .popup .close_btn i {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 9px 9px;
+    font-size: 40px;
+    transition: all .5s;
+}
+
+.section2 .popup .close_btn i:hover {
+    transform: scale(1.2);
+    color: #da291c;
+}
+
+.section2 .popup p>p {
+    margin-top: 60px;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.section2 .popup p>p::before {
+    content: '●';
+    color: #da291c;
+    position: absolute;
+    font-size: 16px;
+    left: -25px;
+    top: -13px;
+}
+
+.section2 .popup dl dt {
+    font-size: 1.4375rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.section2 .popup dl dd {
+    width: 750px;
+    word-wrap: break-word;
+    line-height: 2em;
+}

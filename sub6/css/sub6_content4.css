@@ -1,0 +1,72 @@
+#content {
+    height: 1200px;
+    position: relative;
+}
+
+
+#content h2 span {
+    color: #da291c;
+}
+
+#content .titleArea h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -60%;
+    width: 1px;
+    height: 60px;
+    background-color: #da291c;
+}
+
+
+.contentArea .section1 {
+    margin-top: 150px;
+}
+
+.contentArea h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.contentArea table {
+    width: 100%;
+}
+
+.contentArea thead {
+    text-align: center;
+}
+
+.contentArea thead tr {
+    line-height: 2em;
+
+}
+
+.contentArea thead th {
+    border-top: 2px solid #333;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.contentArea tbody {
+    text-align: center;
+    border-bottom: 2px solid #333;
+
+}
+
+.contentArea tbody tr {
+    font-weight: 700;
+    line-height: 2em;
+}
+
+.contentArea tbody td {
+    padding: 25px;
+    border-bottom: 1px dotted #666;
+}
+
+.contentArea p {
+    margin: 10px 0;
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
